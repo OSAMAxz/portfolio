@@ -254,6 +254,10 @@ body {
     .landing  .img2{
         height: 32%;
         width: 100%;
+        margin-top: 50px;
+    }
+    .landing  .tex2 table tbody tr td {
+        font-size: 80%;
     }
 }
 
@@ -447,6 +451,7 @@ body {
     }
     .project .row h2{
      margin-bottom: -20px ;
+     margin-top: 40px;
     }
     .project .row .mange img{
         width: 60%;  
@@ -457,6 +462,7 @@ body {
 
 
 .contact {
+    
     margin-top: 50px ;
     height: 90vh;
     display: flex;  
@@ -525,8 +531,10 @@ margin-bottom: 30px;
 
 @media (max-width: 768px) {
     .contact{ 
-    margin-left: 43px;
     padding-top: 170px;
+    }
+    .contact .row h2{
+        margin-top: 110px;
     }
     .contact .row {
         display: flex;
@@ -541,6 +549,7 @@ margin-bottom: 30px;
         width: 100%;
         padding: 0px;
         margin: 0;
+        margin-top: -30px;
         display: flex;
         flex-direction: column;
         justify-content: center;
