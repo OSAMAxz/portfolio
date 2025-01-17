@@ -1,0 +1,550 @@
+body {
+    background-color: #111;
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Code', monospace;
+}
+.container{
+    padding-right: 20px;
+    padding-left: 20px; 
+}
+
+:root {
+    --red:#bb0302;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+
+
+.header{
+    height: 68px;
+    width: 100%;
+    box-shadow: 0px 1px 0px 0px #888;
+    position: fixed;
+    z-index: 1000;
+    background-color:#000000;
+}
+.header nav{
+    margin-left: 60px;
+    height: 100%;
+}
+.header .itms ul span {
+    background-color: #888;
+    width: 2px;
+    height: 40px;
+    margin-left: 10px;
+}
+.header .itms ul .u {
+    font-size: 130%;
+}
+.header .itms ul li {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin-left: 25px;
+}
+.header .itms ul li select{
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+}
+.header .itms ul li select:hover{color: crimson; }
+.header .itms{
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-right: 120px;
+ }
+ .header nav a:first-child{ color:var(--red) }
+ .header nav a:first-child:hover{ color: crimson; }
+ .header nav .itms a {
+    color:#fff;
+ }
+ .header nav .itms a:hover{ color: crimson; }
+
+ .header nav button {
+     border-color: #888;
+ }
+ @media (max-width : 1200px){
+    .itms{
+        font-size: 85%;
+    }
+ }
+ @media (max-width: 992px) {
+    .header .itms ul span {
+        display: none;
+        }
+        .header .itms ul{
+            background-color: #000;
+        }
+ }
+ @media (max-width: 768px) {
+    .header .itms ul span {
+        display: none;
+        }
+        .header .itms ul{
+            background-color: #000;
+            width: 100%;
+        }
+   
+  }
+ /***** end header *****/
+
+
+
+ .landing {
+     height: 90vh;
+     display: flex;
+ }
+ .landing  .row {
+     height: 100%;
+     width: 100%;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+ }
+ .landing  .pic{
+   
+     height: 100%;
+     width: 60%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     align-content: center;
+     
+ }  .landing  .picc{
+    right: 150px;
+    height: 113%;
+    position: relative;
+    box-shadow: 1px 1px 1px 1px #888;
+    background-color: #000;
+    border-bottom-right-radius: 50%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: right;
+ }
+ .landing  .picc img{
+    position: relative;
+    left: 180px;
+ }
+ .landing  .pic img{
+     width: 80%;
+     height: 93%;
+ }
+ .landing  .text{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    
+ } .landing  .tex {     justify-content: center;   align-items: center;}
+ .landing  .tex h3{
+     color: var(--red);
+     text-align: center;
+     justify-content: center;
+     align-items: center;
+     background-color: #000;
+     border-radius: 20px 20px 20px 20px;
+     padding: 10px;
+ }
+ .landing  .tex p{
+    color: #ffffffa4;
+    text-align: center;
+    background-color: #000;
+    border-radius: 20px 20px 20px 20px;
+    padding: 10px;
+}
+
+
+ 
+
+ @media (max-width: 768px) {
+    .landing { 
+        margin-left: 30px;
+        height: 100vh;
+    }
+    .landing  .row {
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .landing  .pic {
+        height: 60%;
+        width: 100%;
+        margin-top: 35px;
+    }
+
+    .landing  .text {
+        height: 35%;
+        width: 100%;
+        margin-top: -25px;
+    }
+    .landing  .text h3 {
+        margin-top: 25px;
+    }
+    .landing  .picc{
+     margin-top: 0px;
+    }
+ 
+    .landing  .picc img{
+        left: 120px;
+     }
+  }
+
+
+  @media (min-width: 992px) {
+    .landing  .picc img{
+        left: 120px;
+     }
+  }
+  /******* end landinng ******/
+
+
+
+
+  .landing .row2{
+    height: 85%;
+    
+  }
+  .landing  .tex2{
+    width: 55%;
+  }
+  .landing  .img2{
+    width: 45%;
+    justify-content: right;
+  }
+  .landing  .img2 img{
+    width: 100%;
+  }
+  .landing .tex2 h3{
+    color: #fff;
+}
+.landing .tex2 p{
+    color: #ffffff71;
+}
+.landing .tex2 tbody{
+    color: #ffffffce;
+}
+  @media (max-width: 768px) {
+    .landing .row2{
+        height: 111%;
+      }
+    .landing  .tex2{
+        height: 63%;
+        width: 100%;
+    }
+    .landing  .img2{
+        height: 32%;
+        width: 100%;
+    }
+}
+
+ /******* end about ******/
+
+
+ .skil{
+    height: 80vh;
+    display: flex;  
+    margin-top: 100px;  
+ }
+ /*.skil .container {
+    margin-left: 30px;
+ }*/
+ .skil  .row {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.skil  .row h2{
+    color: #888;
+    margin-top: -12px;
+}
+.skil .row  .one , .skil .row  .two {
+    padding-bottom: 12px;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.skil .row .sk {
+    width: 400px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    background-color: #0e0d0df5;
+    justify-content: space-around;
+    position: relative;
+    border-radius: 8px 8px 8px 8px;
+    border: #000 2px 2px ;
+}
+.skil .row .sk .pp{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+}
+ .skil .row .sk .pp p:first-child{margin-left: 25px; margin-top: 5px;}
+ .skil .row .sk .pp p:nth-child(2){margin-right: 25px; margin-top: 5px;}
+.skil .row .sk .pp p{
+    color: #b4cde6;
+}
+.skil .row .sk .spn{
+    width: 350px;
+    height: 8px;
+    margin-top: 40px;
+    margin-left:25px;
+    position: absolute;
+
+}
+
+.skil .row .sk .spn span:first-child{
+    width: 100%;
+    height: 100%;
+    background-color: #495057;
+    position: absolute;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.skil .row .sk .spn span:nth-child(2){
+    width: 80%;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    border-radius: 5px 5px 5px 5px;
+}
+
+@media (max-width: 768px) {
+    .skil {
+        margin-top: 150px;
+    }
+    .skil  .row {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        margin: 0;
+        padding-bottom: 70px;
+    }
+    .skil .row  .one , .skil .row  .two{
+        height: 50%;
+        width: 100%;
+        padding: 0px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .skil .row .sk {
+     margin: 5px;
+    }
+}
+
+
+/* Medium */
+@media (max-width: 990px) {
+    .skil .row .sk {
+        margin: 5px;
+        width: 300px;
+       }
+      
+       .skil .row .sk .spn{
+           width: 250px;
+       }
+  }
+
+  /******** end skills ******/
+
+
+  .project{
+    height: 90vh;
+    display: flex;  
+  
+  }
+  .project .row h2{
+    color: #888;
+    margin-bottom: 40px;
+  }
+  .project .row {
+    margin-top: 40px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.project .row .mange{
+   width: 33%;
+   height: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-content: center;
+   margin-top: 10px;
+}
+.project .row .mange img{
+    height: 50%;
+    width: 100%;
+}
+.project .row .mange .info{
+    height: 50%
+}
+.mange .info h3 , .mange .info p{
+    color: #ffffff85;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .project{ 
+        margin-left: 20px;
+    }
+    .project .row {
+      height: 120%;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+    }
+    .project .row .mange {
+        width: 100%;
+       height: 33%;
+        flex-direction: column;
+        justify-content: center;
+      align-items: center;
+      align-content: center;
+        margin-top: 40px;
+    }
+    .project .row h2{
+     margin-bottom: -20px ;
+    }
+    .project .row .mange img{
+        width: 60%;  
+    }
+}
+
+/*********end project*******/
+
+
+.contact {
+    margin-top: 50px ;
+    height: 90vh;
+    display: flex;  
+} 
+.contact .row {
+    height: 100%;
+    width: 100%;
+    display: flex;  
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contact .row h2{
+color: #888;
+margin-bottom: 30px;
+}
+.contact .row .mail {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.contact .row .info{
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+}
+.contact .row .info h3{
+    font-size: 200%;
+    color: #fff;
+}
+.contact .row .info p {
+    font-weight: bold;
+    font-size: large;
+    color: #ffffff71;
+}
+.contact .row .mail form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+   margin-top: -50px;
+}
+.contact .row .mail form input , .contact .row .mail .msg{
+ background: transparent;
+ border-right: none;
+ border-left: none;
+ border-top: none;
+ color: #888;
+}
+
+.contact .row .mail form button{
+    width: 20%;
+    height: 10%;
+  border-radius: 50px;
+  margin-top: -30px;
+}
+
+
+@media (max-width: 768px) {
+    .contact{ 
+    margin-left: 43px;
+    padding-top: 170px;
+    }
+    .contact .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+      }
+      .contact .row .mail , .contact .row .info{
+        height: 120%;
+        width: 100%;
+        padding: 0px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+}
